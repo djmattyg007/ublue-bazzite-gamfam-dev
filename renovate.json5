@@ -3,4 +3,7 @@
   extends: [
     "local>djmattyg007/renovate-config:recommended.json5",
   ],
+  ignorePaths: [
+    "README.md",
+  ],
 }
