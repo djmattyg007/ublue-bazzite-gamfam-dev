@@ -1,0 +1,6 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "local>djmattyg007/renovate-config:recommended.json5",
+  ],
+}

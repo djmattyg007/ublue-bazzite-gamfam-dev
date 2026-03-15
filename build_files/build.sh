@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ouex pipefail
+set -exuo pipefail
 
 ### Install packages
 
@@ -9,8 +9,38 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+# /usr/local/share/bash-completion/completions
+
+dnf5 -y copr enable atim/starship
+dnf5 -y copr enable jdxcode/mise
+
+dnf5 -y install \
+  atool \
+  bat \
+  cascadia-code-nf-fonts \
+  cascadia-mono-nf-fonts \
+  dfc \
+  fd-find \
+  git-delta \
+  gitk \
+  gh \
+  hadolint \
+  jq \
+  lsd \
+  micro \
+  miller \
+  mise \
+  nerd-fonts \
+  pandoc \
+  qv4l2 \
+  ripgrep \
+  sad \
+  starship \
+  shellcheck \
+  tmux \
+  ugrep \
+  uxplay \
+  vim-nerdtree
 
 # Use a COPR Example:
 #
