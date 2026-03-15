@@ -16,6 +16,7 @@ dnf5 -y copr enable jdxcode/mise
 
 dnf5 -y install \
   atool \
+  atuin \
   bat \
   cascadia-code-nf-fonts \
   cascadia-mono-nf-fonts \
