@@ -26,6 +26,7 @@ dnf5 -y install \
   gitk \
   gh \
   hadolint \
+  htop \
   jq \
   lsd \
   micro \
