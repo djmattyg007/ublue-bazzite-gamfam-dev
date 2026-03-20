@@ -27,6 +27,7 @@ dnf5 -y install \
   gh \
   hadolint \
   htop \
+  innoextract \
   jq \
   lsd \
   micro \
