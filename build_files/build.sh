@@ -44,6 +44,15 @@ dnf5 -y install \
   uxplay \
   vim-nerdtree
 
+# renovate: datasource=github-releases depName=djmattyg007/hr-zig
+HR_VERSION="v1.1.2"
+RUN curl -fsSL "https://github.com/djmattyg007/hr-zig/releases/download/${HR_VERSION}/hr-zig_Linux_x86_64.tar.gz" | tar xz -C /usr/local/bin hr
+
+# renovate: datasource=github-releases depName=regclient/regclient
+REGCLIENT_VERSION="v0.11.2"
+RUN curl -fsSL -o /usr/local/bin/regctl "https://github.com/regclient/regclient/releases/download/${REGCLIENT_VERSION}/regctl-linux-amd64"
+RUN curl -fsSL -o /usr/local/bin/regctl "https://github.com/regclient/regclient/releases/download/${REGCLIENT_VERSION}/regsync-linux-amd64"
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
