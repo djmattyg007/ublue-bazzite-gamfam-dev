@@ -16,7 +16,9 @@ curl -fsSL "https://github.com/djmattyg007/hr-zig/releases/download/${HR_VERSION
 # renovate: datasource=github-releases depName=regclient/regclient
 REGCLIENT_VERSION="v0.11.2"
 curl -fsSL -o /usr/bin/regctl "https://github.com/regclient/regclient/releases/download/${REGCLIENT_VERSION}/regctl-linux-amd64"
+chmod +x /usr/bin/regctl
 curl -fsSL -o /usr/bin/regsync "https://github.com/regclient/regclient/releases/download/${REGCLIENT_VERSION}/regsync-linux-amd64"
+chmod +x /usr/bin/regsync
 
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable jdxcode/mise
