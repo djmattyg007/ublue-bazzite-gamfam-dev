@@ -31,3 +31,35 @@ url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/ca
 [tools.cargo-binstall."platforms.windows-x64"]
 checksum = "sha256:fef07560d4e391812091bb30c6ed1bd5289f74403a0c947b47b8a8c7a597b51b"
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-pc-windows-msvc.zip"
+
+[[tools.powershell]]
+version = "7.6.0"
+backend = "aqua:PowerShell/PowerShell"
+
+[tools.powershell."platforms.linux-arm64"]
+checksum = "sha256:dddf7564fb3b52dc26be5580fc5b4e08eb3fa65b094488aae6d4b3cad5fea460"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-linux-arm64.tar.gz"
+
+[tools.powershell."platforms.linux-arm64-musl"]
+checksum = "sha256:dddf7564fb3b52dc26be5580fc5b4e08eb3fa65b094488aae6d4b3cad5fea460"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-linux-arm64.tar.gz"
+
+[tools.powershell."platforms.linux-x64"]
+checksum = "sha256:04517472cf57d7f9cbd93897da9bed467c73ca6063c29d7655ebc20aa1d6023f"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-linux-x64.tar.gz"
+
+[tools.powershell."platforms.linux-x64-musl"]
+checksum = "sha256:04517472cf57d7f9cbd93897da9bed467c73ca6063c29d7655ebc20aa1d6023f"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-linux-x64.tar.gz"
+
+[tools.powershell."platforms.macos-arm64"]
+checksum = "sha256:bb52db90e964ee0b91e93f559b350878c6b27c12fd51830d8eca1793712b9639"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-osx-arm64.tar.gz"
+
+[tools.powershell."platforms.macos-x64"]
+checksum = "sha256:7c6279cfead06324451a10ff741883086c9a00f024baea924bb9d3c106fe0c82"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powershell-7.6.0-osx-x64.tar.gz"
+
+[tools.powershell."platforms.windows-x64"]
+checksum = "sha256:9e725837af682b87bb212cd1efe3657c06c540404203810857ec2516ae2ca322"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/PowerShell-7.6.0-win-x64.zip"
