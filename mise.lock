@@ -63,3 +63,67 @@ url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/powersh
 [tools.powershell."platforms.windows-x64"]
 checksum = "sha256:9e725837af682b87bb212cd1efe3657c06c540404203810857ec2516ae2ca322"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.0/PowerShell-7.6.0-win-x64.zip"
+
+[[tools.regctl]]
+version = "0.11.2"
+backend = "aqua:regclient/regclient/regctl"
+
+[tools.regctl."platforms.linux-arm64"]
+checksum = "sha256:71b8deb028d174a20c134c76c77e054e8792f32c834beea4b4da36b56b2f3513"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-linux-arm64"
+
+[tools.regctl."platforms.linux-arm64-musl"]
+checksum = "sha256:71b8deb028d174a20c134c76c77e054e8792f32c834beea4b4da36b56b2f3513"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-linux-arm64"
+
+[tools.regctl."platforms.linux-x64"]
+checksum = "sha256:d79774ee6d3873ba59119b3d4cc9dba850485fbf54a03a17f66fc836bbbe2785"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-linux-amd64"
+
+[tools.regctl."platforms.linux-x64-musl"]
+checksum = "sha256:d79774ee6d3873ba59119b3d4cc9dba850485fbf54a03a17f66fc836bbbe2785"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-linux-amd64"
+
+[tools.regctl."platforms.macos-arm64"]
+checksum = "sha256:5613d14758c929a9ca8f452aa617668cd2e82173b31ba53e5cbb2dea8a90b1e3"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-darwin-arm64"
+
+[tools.regctl."platforms.macos-x64"]
+checksum = "sha256:48149cd51451f4b87226d4fd7f8456f8689ca059e0a88d2fc7aceb6331fc321b"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-darwin-amd64"
+
+[tools.regctl."platforms.windows-x64"]
+checksum = "sha256:698ae278c412821a487e903f51d30838b176886482a5f953666340a961c452e5"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regctl-windows-amd64.exe"
+
+[[tools.regsync]]
+version = "0.11.2"
+backend = "aqua:regclient/regclient/regsync"
+
+[tools.regsync."platforms.linux-arm64"]
+checksum = "sha256:e49ec803f1ef6c5e026bb95ed5f8b25d7ee047dd0f3b58858797330fecddb5e1"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-linux-arm64"
+
+[tools.regsync."platforms.linux-arm64-musl"]
+checksum = "sha256:e49ec803f1ef6c5e026bb95ed5f8b25d7ee047dd0f3b58858797330fecddb5e1"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-linux-arm64"
+
+[tools.regsync."platforms.linux-x64"]
+checksum = "sha256:25dc1bcbd1588e15e97c4d1176dd97f4da56f26f69e7afeb85353b7311230530"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-linux-amd64"
+
+[tools.regsync."platforms.linux-x64-musl"]
+checksum = "sha256:25dc1bcbd1588e15e97c4d1176dd97f4da56f26f69e7afeb85353b7311230530"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-linux-amd64"
+
+[tools.regsync."platforms.macos-arm64"]
+checksum = "sha256:babf6c0c18ce7e24c83b58f51b42a42bd658c936b319416207eaed804b3c32ea"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-darwin-arm64"
+
+[tools.regsync."platforms.macos-x64"]
+checksum = "sha256:d69c5ccafaecd3a3f2f20b9f996ae681e34b0bda07c10eb57d1b80dc28fb2795"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-darwin-amd64"
+
+[tools.regsync."platforms.windows-x64"]
+checksum = "sha256:af830818939dfdae5e8481e8c6004d1ad18a014841990ad49dff2718741d7f4e"
+url = "https://github.com/regclient/regclient/releases/download/v0.11.2/regsync-windows-amd64.exe"
