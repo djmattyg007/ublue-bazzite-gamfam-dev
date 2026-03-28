@@ -1,0 +1,7 @@
+[tools]
+cargo-binstall = "1.17.8"
+
+[settings]
+#locked = true
+lockfile = true
+cargo.binstall = true

@@ -1,7 +1,3 @@
-# Allow build scripts to be referenced without being copied into the final image
-FROM scratch AS ctx
-COPY build_files /
-
 # Base Image
 FROM ghcr.io/ublue-os/bazzite:stable@sha256:c4082bc494f7071a6a4ae110cf17ece90ee04fa8ef1a8ed840e80ec2f02dfa6d
 
@@ -28,11 +24,38 @@ FROM ghcr.io/ublue-os/bazzite:stable@sha256:c4082bc494f7071a6a4ae110cf17ece90ee0
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
-    --mount=type=cache,dst=/var/cache \
+RUN mkdir -p /usr/gamfam/build-files
+
+COPY build-files/dnf-pre.sh /usr/gamfam/build-files/dnf-pre.sh
+RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /ctx/build.sh
+    /usr/gamfam/build-files/dnf-pre.sh
+
+COPY build-files/dnf.sh /usr/gamfam/build-files/dnf.sh
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/tmp \
+    /usr/gamfam/build-files/dnf.sh
+
+COPY build-files/mise.sh /usr/gamfam/build-files/mise.sh
+ENV MISE_SYSTEM_DATA_DIR="/usr/share/mise"
+RUN mkdir "${MISE_SYSTEM_DATA_DIR}"
+COPY mise.toml mise.lock /usr/share/
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/tmp \
+    /usr/gamfam/build-files/mise.sh
+ENV PATH="/usr/share/mise/shims:${PATH}"
+
+COPY build-files/finish.sh /usr/gamfam/build-files/finish.sh
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/tmp \
+    /usr/gamfam/build-files/finish.sh
+
+# testing
+ENV MATTG=mattg
 
 ### LINTING
 ## Verify final image and contents are correct.
