@@ -46,6 +46,7 @@ dnf5 -y install \
   sad \
   starship \
   shellcheck \
+  shfmt \
   tealdeer \
   tmux \
   ugrep \
