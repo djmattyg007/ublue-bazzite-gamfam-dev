@@ -26,6 +26,6 @@ jobs:
           fail_level: "warning"
 
       - name: "Check Renovatebot config"
-        uses: "docker://ghcr.io/renovatebot/renovate"
+        uses: "docker://ghcr.io/renovatebot/renovate@sha256:9d844fa7b9c072b171368fdb2528f84441925016157b04ee99e693e2ef1f2bbd"
         with:
           args: "renovate-config-validator --strict"
