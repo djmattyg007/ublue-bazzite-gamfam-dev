@@ -9,6 +9,7 @@ on:
 
 jobs:
   test-config:
+    name: "Test configuration"
     runs-on: "ubuntu-latest"
 
     steps:
