@@ -1,0 +1,31 @@
+---
+name: "Config checks"
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request: ~
+
+jobs:
+  test-config:
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout repository"
+        uses: "actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd" # v6.0.2
+
+      - name: "Run actionlint"
+        uses: "reviewdog/action-actionlint@0d952c597ef8459f634d7145b0b044a9699e5e43" # v1.71.0
+        with:
+          fail_level: "warning"
+
+      - name: "Run gitleaks"
+        uses: "reviewdog/action-gitleaks@2b7b5685e3e3eecddab5d30cfa04f18123031421" # v1.8.0
+        with:
+          fail_level: "warning"
+
+      - name: "Check Renovatebot config"
+        uses: "docker://ghcr.io/renovatebot/renovate"
+        with:
+          args: "renovate-config-validator --strict"
