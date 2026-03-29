@@ -46,8 +46,12 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/mise.sh
+# Add shims directory to PATH when running the container image directly
 ENV PATH="${PATH}:/usr/share/mise/shims"
+# Add shims directory to PATH for systemd services
 COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
+# Add shims directory to PATH in actual user programs
+COPY build-files/mise-profile.sh /etc/profile.d/mise.sh
 
 COPY build-files/finish.sh /usr/gamfam/build-files/finish.sh
 RUN --mount=type=cache,dst=/var/cache \
