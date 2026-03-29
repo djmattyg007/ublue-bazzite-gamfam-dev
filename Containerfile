@@ -46,16 +46,14 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/mise.sh
-ENV PATH="/usr/share/mise/shims:${PATH}"
+ENV PATH="${PATH}:/usr/share/mise/shims"
+COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
 
 COPY build-files/finish.sh /usr/gamfam/build-files/finish.sh
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/finish.sh
-
-# testing
-ENV MATTG=mattg
 
 ### LINTING
 ## Verify final image and contents are correct.
