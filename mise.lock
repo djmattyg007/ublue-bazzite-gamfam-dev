@@ -32,10 +32,6 @@ url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/ca
 checksum = "sha256:fef07560d4e391812091bb30c6ed1bd5289f74403a0c947b47b8a8c7a597b51b"
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
-[[tools."cargo:pipe-rename"]]
-version = "1.6.7"
-backend = "cargo:pipe-rename"
-
 [[tools.powershell]]
 version = "7.6.0"
 backend = "aqua:PowerShell/PowerShell"
