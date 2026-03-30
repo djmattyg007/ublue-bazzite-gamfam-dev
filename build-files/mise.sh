@@ -14,7 +14,6 @@ cd "${GAMFAM_MISE_ROOT_DIR}"
 mise install
 
 mapfile -t mise_bin_paths < <(mise bin-paths)
-echo "${mise_bin_paths[@]}"
 for shim in "${MISE_DATA_DIR}"/shims/*; do
     shim_file="$(basename "${shim}")"
     for bin_path in "${mise_bin_paths[@]}"; do
