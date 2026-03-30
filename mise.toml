@@ -1,8 +1,10 @@
 [tools]
+"cargo:mq-run" = "0.5.24"
 "cargo:pipe-rename" = "1.6.7"
 powershell = "7.6.0"
 regctl = "0.11.2"
 regsync = "0.11.2"
+usage = "3.2.0"
 
 [settings]
 #locked = true

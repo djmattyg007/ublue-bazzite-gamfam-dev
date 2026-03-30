@@ -2,6 +2,8 @@
 
 set -exuo pipefail
 
+export CARGO_HOME=/tmp/cargo
+
 export MISE_DATA_DIR="${GAMFAM_MISE_ROOT_DIR}/data"
 export MISE_CACHE_DIR=/var/cache/mise/cache
 export MISE_STATE_DIR=/tmp/mise/state
