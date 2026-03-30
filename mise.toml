@@ -1,5 +1,4 @@
 [tools]
-cargo-binstall = "1.17.8"
 powershell = "7.6.0"
 regctl = "0.11.2"
 regsync = "0.11.2"
