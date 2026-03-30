@@ -56,6 +56,8 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/finish.sh
 
+COPY build-files/brew.env /usr/lib/environment.d/50-brew.conf
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
