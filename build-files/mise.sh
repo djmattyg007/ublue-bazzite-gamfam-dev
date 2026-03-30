@@ -2,12 +2,25 @@
 
 set -exuo pipefail
 
-export MISE_EXPERIMENTAL=true
+export MISE_DATA_DIR="${GAMFAM_MISE_ROOT_DIR}/data"
 export MISE_CACHE_DIR=/var/cache/mise/cache
 export MISE_STATE_DIR=/tmp/mise/state
-export MISE_TRUSTED_CONFIG_PATHS=/usr/share/mise
-mkdir -p /tmp/mise /var/cache/mise/{cache,data}
+mkdir -p "${MISE_DATA_DIR}" "${MISE_CACHE_DIR}" "${MISE_STATE_DIR}"
 
-MISE_DATA_DIR=/var/cache/mise/data mise install --cd /usr/share/mise --system
+cd "${GAMFAM_MISE_ROOT_DIR}"
 
-MISE_DATA_DIR=/usr/share/mise/data mise reshim
+mise install
+
+mapfile -t mise_bin_paths < <(mise bin-paths)
+echo "${mise_bin_paths[@]}"
+for shim in "${MISE_DATA_DIR}"/shims/*; do
+    shim_file="$(basename "${shim}")"
+    for bin_path in "${mise_bin_paths[@]}"; do
+        if [[ -x "${bin_path}/${shim_file}" ]]; then
+            ln -s "${bin_path}/${shim_file}" "/usr/bin/${shim_file}"
+            break
+        fi
+    done
+done
+
+rm -r "${MISE_DATA_DIR}/downloads"

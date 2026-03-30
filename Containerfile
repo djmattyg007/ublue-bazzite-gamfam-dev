@@ -38,21 +38,17 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/dnf.sh
 
-RUN mkdir -p /usr/share/mise
+ENV GAMFAM_MISE_ROOT_DIR=/usr/share/mise
+RUN mkdir -p "${GAMFAM_MISE_ROOT_DIR}"
 COPY build-files/mise.sh /usr/gamfam/build-files/mise.sh
-ENV MISE_SYSTEM_DATA_DIR="/usr/share/mise/data"
-RUN mkdir "${MISE_SYSTEM_DATA_DIR}"
-COPY mise.toml mise.lock /usr/share/mise/
+COPY mise.toml mise.lock "${GAMFAM_MISE_ROOT_DIR}/"
+ENV MISE_TRUSTED_CONFIG_PATHS="${GAMFAM_MISE_ROOT_DIR}"
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/mise.sh
-# Add shims directory to PATH when running the container image directly
-ENV PATH="${PATH}:${MISE_SYSTEM_DATA_DIR}/shims"
-# Add shims directory to PATH for systemd services
+# Configure system-wide Mise directory as trusted for everyone, just makes life easier
 COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
-# Add shims directory to PATH in actual user programs
-COPY build-files/mise-profile.sh /etc/profile.d/mise.sh
 
 COPY build-files/finish.sh /usr/gamfam/build-files/finish.sh
 RUN --mount=type=cache,dst=/var/cache \
