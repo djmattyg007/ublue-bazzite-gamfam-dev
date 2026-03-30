@@ -38,16 +38,17 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/dnf.sh
 
+RUN mkdir -p /usr/share/mise
 COPY build-files/mise.sh /usr/gamfam/build-files/mise.sh
-ENV MISE_SYSTEM_DATA_DIR="/usr/share/mise"
+ENV MISE_SYSTEM_DATA_DIR="/usr/share/mise/data"
 RUN mkdir "${MISE_SYSTEM_DATA_DIR}"
-COPY mise.toml mise.lock /usr/share/
+COPY mise.toml mise.lock /usr/share/mise/
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/gamfam/build-files/mise.sh
 # Add shims directory to PATH when running the container image directly
-ENV PATH="${PATH}:/usr/share/mise/shims"
+ENV PATH="${PATH}:${MISE_SYSTEM_DATA_DIR}/shims"
 # Add shims directory to PATH for systemd services
 COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
 # Add shims directory to PATH in actual user programs
