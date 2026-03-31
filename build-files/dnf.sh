@@ -30,6 +30,7 @@ dnf5 -y install \
   git-delta \
   gitk \
   gh \
+  graphviz \
   hadolint \
   htop \
   jq \
