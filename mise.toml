@@ -1,5 +1,5 @@
 [tools]
-"cargo:mq-run" = "0.5.24"
+"cargo:mq-run" = "0.5.29"
 "cargo:pipe-rename" = "1.6.7"
 powershell = "7.6.1"
 regctl = "0.11.3"
