@@ -107,8 +107,6 @@ jobs:
             io.artifacthub.package.logo-url=${{ env.IMAGE_LOGO_URL }}
             io.artifacthub.package.prerelease=false
             containers.bootc=1
-#          sep-tags: " "
-#          sep-annotations: " "
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
@@ -123,33 +121,9 @@ jobs:
         uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f # v7.1.0
         with:
           push: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
-          file: Containerfile
+          file: Containerfile.${{ matrix.base }}.${{ matrix.image }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
-#        uses: redhat-actions/buildah-build@7a95fa7ee0f02d552a32753e7414641a04307056 # v2.13
-#        with:
-#          containerfiles: |
-#            ./Containerfile
-#          # Postfix image name with -custom to make it a little more descriptive
-#          # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
-#          image: ${{ env.IMAGE_NAME }}
-#          tags: ${{ steps.metadata.outputs.tags }}
-#          labels: ${{ steps.metadata.outputs.labels }}
-#          oci: false
-
-#      - name: Push To GHCR
-#        uses: redhat-actions/push-to-registry@5ed88d269cf581ea9ef6dd6806d01562096bee9c # v2.8
-#        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-#        id: push
-#        env:
-#          REGISTRY_USER: ${{ github.actor }}
-#          REGISTRY_PASSWORD: ${{ github.token }}
-#        with:
-#          registry: ${{ env.IMAGE_REGISTRY }}
-#          image: ${{ env.IMAGE_NAME }}
-#          tags: ${{ steps.metadata.outputs.tags }}
-#          username: ${{ env.REGISTRY_USER }}
-#          password: ${{ env.REGISTRY_PASSWORD }}
 
       - name: Sign container image
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)

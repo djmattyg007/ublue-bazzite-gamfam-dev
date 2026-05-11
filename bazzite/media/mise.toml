@@ -1,0 +1,6 @@
+[tools]
+"cargo:pipe-rename" = "1.6.7"
+
+[settings]
+lockfile = true
+cargo.binstall = true
