@@ -53,3 +53,4 @@ dnf5 -y install \
   ugrep \
   uxplay \
   vim-nerdtree \
+  zsync \
