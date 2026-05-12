@@ -40,6 +40,7 @@ dnf5 -y install \
   mise \
   nerd-fonts \
   pandoc \
+  podlet \
   qv4l2 \
   ripgrep \
   rust \

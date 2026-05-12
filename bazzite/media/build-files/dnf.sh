@@ -29,6 +29,7 @@ dnf5 -y install \
   micro \
   mise \
   nerd-fonts \
+  podlet \
   qv4l2 \
   ripgrep \
   rust \
