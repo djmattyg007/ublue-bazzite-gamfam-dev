@@ -2,8 +2,10 @@
 "cargo:mq-run" = "0.5.29"
 "cargo:pipe-rename" = "1.6.7"
 powershell = "7.6.1"
+rclone = "1.74.1"
 regctl = "0.11.4"
 regsync = "0.11.4"
+restic = "0.18.1"
 usage = "3.3.0"
 
 [settings]
