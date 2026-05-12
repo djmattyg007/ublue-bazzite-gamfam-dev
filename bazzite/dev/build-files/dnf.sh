@@ -46,6 +46,7 @@ dnf5 -y install \
   rust \
   rustup \
   sad \
+  sqlite \
   starship \
   shellcheck \
   shfmt \
