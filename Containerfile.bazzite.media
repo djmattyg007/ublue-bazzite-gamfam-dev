@@ -24,37 +24,37 @@ FROM ghcr.io/ublue-os/bazzite:stable@sha256:3c96c8062c2319e72213b638eafd5228ba29
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
-RUN mkdir -p /usr/gamfam/build-files
+RUN mkdir -p /usr/share/gamfam/build-files
 
-COPY bazzite/media/build-files/dnf-pre.sh /usr/gamfam/build-files/dnf-pre.sh
+COPY bazzite/media/build-files/dnf-pre.sh /usr/share/gamfam/build-files/dnf-pre.sh
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /usr/gamfam/build-files/dnf-pre.sh
+    /usr/share/gamfam/build-files/dnf-pre.sh
 
-COPY bazzite/media/build-files/dnf.sh /usr/gamfam/build-files/dnf.sh
+COPY bazzite/media/build-files/dnf.sh /usr/share/gamfam/build-files/dnf.sh
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /usr/gamfam/build-files/dnf.sh
+    /usr/share/gamfam/build-files/dnf.sh
 
 ENV GAMFAM_MISE_ROOT_DIR=/usr/share/mise
 RUN mkdir -p "${GAMFAM_MISE_ROOT_DIR}"
-COPY build-files/mise.sh /usr/gamfam/build-files/mise.sh
+COPY build-files/mise.sh /usr/share/gamfam/build-files/mise.sh
 COPY bazzite/media/mise.toml bazzite/media/mise.lock "${GAMFAM_MISE_ROOT_DIR}/"
 ENV MISE_TRUSTED_CONFIG_PATHS="${GAMFAM_MISE_ROOT_DIR}"
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /usr/gamfam/build-files/mise.sh
+    /usr/share/gamfam/build-files/mise.sh
 # Configure system-wide Mise directory as trusted for everyone, just makes life easier
 COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
 
-COPY build-files/finish.sh /usr/gamfam/build-files/finish.sh
+COPY build-files/finish.sh /usr/share/gamfam/build-files/finish.sh
 RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    /usr/gamfam/build-files/finish.sh
+    /usr/share/gamfam/build-files/finish.sh
 
 COPY build-files/brew.env /usr/lib/environment.d/50-brew.conf
 
