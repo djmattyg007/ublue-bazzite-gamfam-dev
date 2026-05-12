@@ -27,9 +27,9 @@ dnf5 -y install \
   cascadia-mono-nf-fonts \
   dfc \
   fd-find \
+  gh \
   git-delta \
   gitk \
-  gh \
   graphviz \
   hadolint \
   htop \
@@ -46,10 +46,10 @@ dnf5 -y install \
   rust \
   rustup \
   sad \
-  sqlite \
-  starship \
   shellcheck \
   shfmt \
+  sqlite \
+  starship \
   tealdeer \
   tmux \
   ugrep \
