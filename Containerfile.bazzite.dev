@@ -47,7 +47,7 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/share/gamfam/build-files/mise.sh
-# Configure system-wide Mise directory as trusted for everyone, just makes life easier
+# Configure system-wide Mise directory as trusted for everyone - it just makes life easier.
 COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
 
 COPY build-files/finish.sh /usr/share/gamfam/build-files/finish.sh
