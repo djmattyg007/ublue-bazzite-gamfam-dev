@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+set -euo pipefail
+
+if [[ -n "${1:-}" ]]; then
+    base="${1}"
+else
+    >&2 echo "Please supply the base image name"
+    exit 1
+fi
+if [[ -n "${2:-}" ]]; then
+    image="${2}"
+else
+    >&2 echo "Please supply the image type name"
+    exit 1
+fi
+
+podman build -t "ublue-gamfam-${base}-${image}" -f "Containerfile.${base}.${image}"
