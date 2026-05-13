@@ -31,6 +31,8 @@ jobs:
       contents: read
       packages: write
       id-token: write
+      attestations: write
+      artifact-metadata: write
 
     continue-on-error: true
     strategy:
@@ -124,7 +126,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build (and maybe Push) Image
-        id: build_and_push_image
+        id: build-and-push-image
         uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f # v7.1.0
         with:
           push: ${{ github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
@@ -134,14 +136,21 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=min
 
-      - name: Sign container image
+      - name: Sign pushed container image
+        id: sign-image
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         run: |
-          mapfile -t image_tags <<< "${{ steps.metadata.outputs.tags }}"
-          for tag in "${image_tags[@]}"; do
-            cosign sign -y --key env://COSIGN_PRIVATE_KEY "${tag}"
-          done
+          cosign sign -y --key env://COSIGN_PRIVATE_KEY "${IMAGE_REGISTRY}/${IMAGE_NAME}@${DIGEST}"
         env:
-          TAGS: ${{ steps.build_and_push_image.outputs.digest }}
           COSIGN_EXPERIMENTAL: false
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+          DIGEST: ${{ steps.build-and-push-image.outputs.digest }}
+
+      - name: Attestation
+        id: attest-image
+        if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: actions/attest@59d89421af93a897026c735860bf21b6eb4f7b26 # v4.1.0
+        with:
+          subject-name: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
+          subject-digest: ${{ steps.build-and-push-image.outputs.digest }}
+          push-to-registry: true
