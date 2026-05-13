@@ -7,6 +7,11 @@ on:
       - "**"
   pull_request: ~
 
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
 jobs:
   test-config:
     name: "Test configuration"
@@ -35,7 +40,7 @@ jobs:
           fail_level: "warning"
 
       - name: "Check Renovatebot config"
-        uses: "docker://ghcr.io/renovatebot/renovate"
+        uses: "docker://ghcr.io/renovatebot/renovate@sha256:0c8122ec80a90963fde9609d5b8396a4fcafa53504ebf5ac32ff8097c2f05f98" # v43.177
         with:
           args: "renovate-config-validator --strict"
 
