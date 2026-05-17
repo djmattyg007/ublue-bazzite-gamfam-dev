@@ -29,6 +29,7 @@ dnf5 -y install \
   micro \
   mise \
   nerd-fonts \
+  pandoc \
   podlet \
   qv4l2 \
   ripgrep \
