@@ -6,7 +6,6 @@ com.moonlight_stream.Moonlight
 com.poweriso.PowerISO
 com.spotify.Client
 com.steamgriddb.SGDBoop
-io.github.Qalculate.qalculate-qt
 io.github.ungoogled_software.ungoogled_chromium
 io.missioncenter.MissionCenter
 net.cozic.joplin_desktop
