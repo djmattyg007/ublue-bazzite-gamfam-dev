@@ -47,8 +47,6 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /usr/share/gamfam/build-files/mise.sh
-# Configure system-wide Mise directory as trusted for everyone - it just makes life easier.
-COPY build-files/mise.env /usr/lib/environment.d/80-mise.conf
 
 COPY build-files/finish.sh /usr/share/gamfam/build-files/finish.sh
 RUN --mount=type=cache,dst=/var/cache \
@@ -56,9 +54,11 @@ RUN --mount=type=cache,dst=/var/cache \
     --mount=type=tmpfs,dst=/tmp \
     /usr/share/gamfam/build-files/finish.sh
 
+COPY system-files /
+RUN echo 'import "/usr/share/gamfam/just/gamfam.just"' >> /usr/share/ublue-os/justfile
+
 COPY cosign.pub /etc/pki/containers/gamfam.pub
 COPY bazzite/dev/info.json /usr/share/gamfam/info.json
-COPY build-files/brew.env /usr/lib/environment.d/50-brew.conf
 
 ### LINTING
 ## Verify final image and contents are correct.
