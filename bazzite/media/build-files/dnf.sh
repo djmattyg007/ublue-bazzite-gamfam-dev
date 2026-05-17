@@ -23,6 +23,7 @@ dnf5 -y install \
   cascadia-code-nf-fonts \
   cascadia-mono-nf-fonts \
   dfc \
+  emulationstation-de \
   fd-find \
   jq \
   lsd \
