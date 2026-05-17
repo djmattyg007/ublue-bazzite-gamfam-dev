@@ -15,7 +15,7 @@ set -exuo pipefail
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y copr enable jdxcode/mise
+dnf5 config-manager setopt terra.enabled=1
 
 dnf5 -y install \
   atool \
