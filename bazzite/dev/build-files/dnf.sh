@@ -40,8 +40,6 @@ dnf5 -y install \
   nerd-fonts \
   pandoc \
   podlet \
-  qalculate \
-  qalculate-qt \
   qv4l2 \
   ripgrep \
   rust \
