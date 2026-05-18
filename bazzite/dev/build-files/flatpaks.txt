@@ -13,6 +13,7 @@ net.cozic.joplin_desktop
 net.fasterland.converseen
 org.audacityteam.Audacity
 org.gnome.meld
+org.kde.filelight
 org.kde.kamoso
 org.kde.kdenlive
 org.kde.kleopatra
