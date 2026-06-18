@@ -35,6 +35,7 @@ dnf5 -y install \
   hadolint \
   htop \
   jq \
+  libheif \
   lsd \
   micro \
   miller \

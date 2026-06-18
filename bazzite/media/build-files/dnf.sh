@@ -26,6 +26,7 @@ dnf5 -y install \
   emulationstation-de \
   fd-find \
   jq \
+  libheif \
   lsd \
   micro \
   mise \
