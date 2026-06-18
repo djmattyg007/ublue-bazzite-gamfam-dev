@@ -53,7 +53,7 @@ dnf5 -y install \
   shfmt \
   sqlite \
   starship \
-  sunshine \
+  Sunshine \
   tealdeer \
   tmux \
   ugrep \
