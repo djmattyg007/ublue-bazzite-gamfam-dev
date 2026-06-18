@@ -17,6 +17,8 @@ set -exuo pipefail
 
 dnf5 config-manager setopt terra.enabled=1
 
+dnf5 -y copr enable lizardbyte/beta
+
 dnf5 -y install \
   atool \
   cargo \
@@ -37,4 +39,5 @@ dnf5 -y install \
   ripgrep \
   rust \
   rustup \
+  Sunshine \
   uxplay \
