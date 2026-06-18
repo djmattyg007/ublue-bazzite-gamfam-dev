@@ -30,6 +30,7 @@ dnf5 -y install \
   fd-find \
   gh \
   git-delta \
+  git-lfs \
   gitk \
   graphviz \
   hadolint \
