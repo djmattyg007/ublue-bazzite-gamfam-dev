@@ -5,65 +5,65 @@ version = "1.6.7"
 backend = "cargo:pipe-rename"
 
 [[tools.rclone]]
-version = "1.74.1"
+version = "1.74.3"
 backend = "aqua:rclone/rclone"
 
 [tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:c816ed0e568de4dd1bba1a4d0cd47523d3dd54337dd5fde73f1b068857ecf877"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-linux-arm64.zip"
+checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
 
 [tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:c816ed0e568de4dd1bba1a4d0cd47523d3dd54337dd5fde73f1b068857ecf877"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-linux-arm64.zip"
+checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
 
 [tools.rclone."platforms.linux-x64"]
-checksum = "sha256:67df3059a6233b6e32e604bcd637654bb294ff86291b65ede77123e94818d911"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-linux-amd64.zip"
+checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
 
 [tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:67df3059a6233b6e32e604bcd637654bb294ff86291b65ede77123e94818d911"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-linux-amd64.zip"
+checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
 
 [tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:98c04f5f678fe87d435d6f4b1fe204103c5906b151357e631ba0111410691213"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-osx-arm64.zip"
+checksum = "sha256:33a435ab17023b686918ce9a3975aceb75fe1796c694f38f1993024be1f063f5"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-arm64.zip"
 
 [tools.rclone."platforms.macos-x64"]
-checksum = "sha256:4f10d7845422d8568e187a0f6813f124bca9b657ac7becd8bdf8508fa968a336"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-osx-amd64.zip"
+checksum = "sha256:417cabd402d57806d597bd0ba8fb33a434ca8c2a1a5aa98de5a0bd4b52b39202"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-amd64.zip"
 
 [tools.rclone."platforms.windows-x64"]
-checksum = "sha256:51326acc0d9cf60234aa5787d8da66a621430aa373542a6b35bad8a4a26ca43e"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.1/rclone-v1.74.1-windows-amd64.zip"
+checksum = "sha256:ecb0ed9006e0d1a693757007716a11dab6c2cde6dac3f2fd87da962eaa73d11d"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-windows-amd64.zip"
 
 [[tools.usage]]
-version = "3.3.0"
+version = "3.5.2"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.linux-arm64"]
-checksum = "sha256:55a0c94c35bb9e2c5cbc223973667cd450759cd3410d4c5836ef2fdfd95adc57"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:ef4b872c9c371e8c200c53f0610295d6318d7281bf73e211e6d9eb865a19d98e"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:55a0c94c35bb9e2c5cbc223973667cd450759cd3410d4c5836ef2fdfd95adc57"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:ef4b872c9c371e8c200c53f0610295d6318d7281bf73e211e6d9eb865a19d98e"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:9a4316d633243aa54308ff3bf6970923b18c105dea34fbc3009d51889e1dd03f"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:be7d66c000940a604001fc0dbe2e340ade00d949b46ae41a434853c1873d7f1d"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:9a4316d633243aa54308ff3bf6970923b18c105dea34fbc3009d51889e1dd03f"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:be7d66c000940a604001fc0dbe2e340ade00d949b46ae41a434853c1873d7f1d"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:ab6c69a6541e18ffca7bd950dd4cc867ea9267d0f91115c13aa650cde6634d62"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:e2a6380f037cdf25f4b355d1ae2387bef12c2b624b7901d284d42a57d12212e6"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-universal-apple-darwin.tar.gz"
 
 [tools.usage."platforms.macos-x64"]
-checksum = "sha256:ab6c69a6541e18ffca7bd950dd4cc867ea9267d0f91115c13aa650cde6634d62"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:e2a6380f037cdf25f4b355d1ae2387bef12c2b624b7901d284d42a57d12212e6"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-universal-apple-darwin.tar.gz"
 
 [tools.usage."platforms.windows-x64"]
-checksum = "sha256:628b8743d552f2cff2dee2b783a4827ef555409def3fb9ec536117d96cda2018"
-url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:709843742514bd0bb669568d87c4dc5261ef7465e48bbeaad4de9084be3d735a"
+url = "https://github.com/jdx/usage/releases/download/v3.5.2/usage-x86_64-pc-windows-msvc.zip"
