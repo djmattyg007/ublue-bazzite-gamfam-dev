@@ -42,6 +42,7 @@ dnf5 -y install \
   micro \
   miller \
   mise \
+  moreutils \
   nerd-fonts \
   pandoc \
   podlet \
