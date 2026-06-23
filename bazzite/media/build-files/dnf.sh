@@ -30,11 +30,13 @@ dnf5 -y install \
   jq \
   libheif \
   lsd \
+  mame-tools \
   micro \
   mise \
   nerd-fonts \
   pandoc \
   podlet \
+  qchdman \
   qv4l2 \
   ripgrep \
   rust \
