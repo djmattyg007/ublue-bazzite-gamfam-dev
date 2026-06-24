@@ -21,7 +21,6 @@ dnf5 -y copr enable lizardbyte/beta
 
 dnf5 -y install \
   atool \
-  cargo \
   cascadia-code-nf-fonts \
   cascadia-mono-nf-fonts \
   dfc \
@@ -39,7 +38,5 @@ dnf5 -y install \
   qchdman \
   qv4l2 \
   ripgrep \
-  rust \
-  rustup \
   Sunshine \
   uxplay \

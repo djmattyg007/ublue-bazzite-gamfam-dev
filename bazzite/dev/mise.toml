@@ -1,6 +1,7 @@
+[tool_alias]
+mq = "github:harehare/mq"
+
 [tools]
-"cargo:mq-run" = "0.6.2"
-"cargo:pipe-rename" = "1.6.7"
 powershell = "7.6.3"
 rclone = "1.74.3"
 regctl = "0.11.5"
@@ -8,6 +9,14 @@ regsync = "0.11.5"
 restic = "0.19.0"
 usage = "3.5.3"
 
+[tools."github:marcusbuffett/pipe-rename"]
+version = "1.6.7"
+bin = "renamer"
+
+[tools.mq]
+version = "0.6.2"
+matching = "mq"
+rename_exe = "mq"
+
 [settings]
 lockfile = true
-cargo.binstall = true
