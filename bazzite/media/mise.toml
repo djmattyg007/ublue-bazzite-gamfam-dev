@@ -1,7 +1,7 @@
 [tools]
 "cargo:pipe-rename" = "1.6.7"
 rclone = "1.74.3"
-usage = "3.5.2"
+usage = "3.5.3"
 
 [settings]
 lockfile = true
