@@ -1,5 +1,7 @@
 # shellcheck shell=sh
 
+alias please='sudo'
+
 # shellcheck disable=SC2175,SC3009
 up() { cd "$(eval printf '../'%.0s {1.."$1"})" && pwd; }
 
