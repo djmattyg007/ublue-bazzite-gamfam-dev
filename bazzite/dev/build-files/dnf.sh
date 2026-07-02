@@ -55,6 +55,7 @@ dnf5 -y install \
   sad \
   shellcheck \
   shfmt \
+  sl \
   sqlite \
   starship \
   Sunshine \

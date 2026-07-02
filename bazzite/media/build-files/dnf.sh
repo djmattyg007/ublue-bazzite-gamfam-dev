@@ -39,6 +39,7 @@ dnf5 -y install \
   qchdman \
   qv4l2 \
   ripgrep \
+  sl \
   Sunshine \
   uxplay \
   xwayland-satellite \
