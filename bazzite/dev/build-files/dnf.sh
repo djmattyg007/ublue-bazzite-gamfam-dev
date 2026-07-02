@@ -46,7 +46,7 @@ dnf5 -y install \
   nerd-fonts \
   pandoc \
   podlet \
-  prism-launcher \
+  prismlauncher \
   qchdman \
   qv4l2 \
   ripgrep \
