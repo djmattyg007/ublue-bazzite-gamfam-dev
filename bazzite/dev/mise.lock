@@ -79,6 +79,49 @@ url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-x86_64-pc-wind
 url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718549"
 provenance = "github-attestations"
 
+[[tools.mq]]
+version = "0.6.2"
+backend = "github:harehare/mq"
+
+[tools.mq.options]
+matching = "mq"
+
+[tools.mq."platforms.linux-arm64"]
+checksum = "sha256:955b25040b5f920951f705aed0b8266cf2eb671e7979c967e8eec77a125ad03a"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-aarch64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718500"
+provenance = "github-attestations"
+
+[tools.mq."platforms.linux-arm64-musl"]
+checksum = "sha256:c28bf5722bd67488e679cd9b5e69dfe116d1ffe4405d32fcf24a93be778d05a5"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-aarch64-unknown-linux-musl"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718524"
+provenance = "github-attestations"
+
+[tools.mq."platforms.linux-x64"]
+checksum = "sha256:b5b3aaca565457f79fcb07ac095a4158f47addf07f2cd7f5246ddf655af17e6c"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-x86_64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718566"
+provenance = "github-attestations"
+
+[tools.mq."platforms.linux-x64-musl"]
+checksum = "sha256:814433eae2fbc5fc0f6ab520d12b0ea5ac6431f691cc104da71c192e149f9c95"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-x86_64-unknown-linux-musl"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718580"
+provenance = "github-attestations"
+
+[tools.mq."platforms.macos-arm64"]
+checksum = "sha256:5b913f044864c305f3e4cc88b3ab991e1ac5d1e0892c281feef55998966017b5"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-aarch64-apple-darwin"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718345"
+provenance = "github-attestations"
+
+[tools.mq."platforms.windows-x64"]
+checksum = "sha256:cceb91f9b37c23576e78038ba3d63bee9264df0ecbd13e3f1f060f3c69dbce92"
+url = "https://github.com/harehare/mq/releases/download/v0.6.2/mq-x86_64-pc-windows-msvc.exe"
+url_api = "https://api.github.com/repos/harehare/mq/releases/assets/453718549"
+provenance = "github-attestations"
+
 [[tools.powershell]]
 version = "7.6.3"
 backend = "aqua:PowerShell/PowerShell"
