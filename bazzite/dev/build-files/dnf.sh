@@ -63,4 +63,5 @@ dnf5 -y install \
   ugrep \
   uxplay \
   vim-nerdtree \
+  xwayland-satellite \
   zsync \

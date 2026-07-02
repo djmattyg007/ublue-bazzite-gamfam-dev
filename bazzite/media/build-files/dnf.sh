@@ -41,3 +41,4 @@ dnf5 -y install \
   ripgrep \
   Sunshine \
   uxplay \
+  xwayland-satellite \
