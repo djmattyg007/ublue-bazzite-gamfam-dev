@@ -129,30 +129,37 @@ backend = "aqua:PowerShell/PowerShell"
 [tools.powershell."platforms.linux-arm64"]
 checksum = "sha256:7a14a385eca7dc5bedc1c8aa3d8b765f449ada30aabe5785a9fd331266eb062d"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534384"
 
 [tools.powershell."platforms.linux-arm64-musl"]
 checksum = "sha256:7a14a385eca7dc5bedc1c8aa3d8b765f449ada30aabe5785a9fd331266eb062d"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534384"
 
 [tools.powershell."platforms.linux-x64"]
 checksum = "sha256:856d0765d2332377f9d7a4aea76efdfde4de51446e7738dde2dfda41dba9e2a7"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534506"
 
 [tools.powershell."platforms.linux-x64-musl"]
 checksum = "sha256:c2fdcdc95478f05ae9d62cf1c631451dcb98bb526d4ba0c0b675865a3d9b3589"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-linux-musl-x64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534424"
 
 [tools.powershell."platforms.macos-arm64"]
 checksum = "sha256:f0263c2072fe7d0953781c60497a574bea99b37237f2554a59ce4bad07de8d36"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-osx-arm64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534603"
 
 [tools.powershell."platforms.macos-x64"]
 checksum = "sha256:f02073a442515877aa5a8f361f55866800100c41b665cfb64883b77dbba09412"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/powershell-7.6.3-osx-x64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449534710"
 
 [tools.powershell."platforms.windows-x64"]
 checksum = "sha256:07ddb0d00b660459560ef82a9841da7705b27cd5dcca5a0d7b025a98eca29eca"
 url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.3/PowerShell-7.6.3-win-x64.zip"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/449535066"
 
 [[tools.rclone]]
 version = "1.74.3"
@@ -161,30 +168,37 @@ backend = "aqua:rclone/rclone"
 [tools.rclone."platforms.linux-arm64"]
 checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439459056"
 
 [tools.rclone."platforms.linux-arm64-musl"]
 checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439459056"
 
 [tools.rclone."platforms.linux-x64"]
 checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439458559"
 
 [tools.rclone."platforms.linux-x64-musl"]
 checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439458559"
 
 [tools.rclone."platforms.macos-arm64"]
 checksum = "sha256:33a435ab17023b686918ce9a3975aceb75fe1796c694f38f1993024be1f063f5"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439462898"
 
 [tools.rclone."platforms.macos-x64"]
 checksum = "sha256:417cabd402d57806d597bd0ba8fb33a434ca8c2a1a5aa98de5a0bd4b52b39202"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439462719"
 
 [tools.rclone."platforms.windows-x64"]
 checksum = "sha256:ecb0ed9006e0d1a693757007716a11dab6c2cde6dac3f2fd87da962eaa73d11d"
 url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439463949"
 
 [[tools.regctl]]
 version = "0.11.5"
@@ -193,30 +207,37 @@ backend = "aqua:regclient/regclient/regctl"
 [tools.regctl."platforms.linux-arm64"]
 checksum = "sha256:c4cf231e74cda685f1599f3d866b02b03c572e54b79ec8b062f32070b0ba4587"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-linux-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177224"
 
 [tools.regctl."platforms.linux-arm64-musl"]
 checksum = "sha256:c4cf231e74cda685f1599f3d866b02b03c572e54b79ec8b062f32070b0ba4587"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-linux-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177224"
 
 [tools.regctl."platforms.linux-x64"]
 checksum = "sha256:c93aa7638749f5aaac1a8e01787321889c78f0101809bb2880343478d0ba0467"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-linux-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177221"
 
 [tools.regctl."platforms.linux-x64-musl"]
 checksum = "sha256:c93aa7638749f5aaac1a8e01787321889c78f0101809bb2880343478d0ba0467"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-linux-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177221"
 
 [tools.regctl."platforms.macos-arm64"]
 checksum = "sha256:f4d536d64d0c3cc1db7400902175a1c314675991d22e87e15c319501a2676d3f"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-darwin-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177223"
 
 [tools.regctl."platforms.macos-x64"]
 checksum = "sha256:c132fdddda68b9c7584ac19f3b40cd17f71916c2bca8182270ebe65b55198a12"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-darwin-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177217"
 
 [tools.regctl."platforms.windows-x64"]
 checksum = "sha256:9b83975d464e4ee5a9f899a3ead26072ed67e9a8ed0f582897bfad8141b45938"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regctl-windows-amd64.exe"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177235"
 
 [[tools.regsync]]
 version = "0.11.5"
@@ -225,30 +246,37 @@ backend = "aqua:regclient/regclient/regsync"
 [tools.regsync."platforms.linux-arm64"]
 checksum = "sha256:1d00b80fcd63b6544d2b66578db667741eb94fc43f8f2c2c3d307565cc2aa184"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-linux-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177234"
 
 [tools.regsync."platforms.linux-arm64-musl"]
 checksum = "sha256:1d00b80fcd63b6544d2b66578db667741eb94fc43f8f2c2c3d307565cc2aa184"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-linux-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177234"
 
 [tools.regsync."platforms.linux-x64"]
 checksum = "sha256:486d5fcac076e31837864632446de22519d88101db4a4b4cfaa4ee3350e41606"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-linux-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177226"
 
 [tools.regsync."platforms.linux-x64-musl"]
 checksum = "sha256:486d5fcac076e31837864632446de22519d88101db4a4b4cfaa4ee3350e41606"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-linux-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177226"
 
 [tools.regsync."platforms.macos-arm64"]
 checksum = "sha256:5ab9ce683989cbff615e33c3e49140fe6c1f2ea20228eecd5683736ab5f9ec18"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-darwin-arm64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177232"
 
 [tools.regsync."platforms.macos-x64"]
 checksum = "sha256:f7a2ec78abbbe328e51265a6435f1eebc2ff44f57e15d2c770db968683594d06"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-darwin-amd64"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177213"
 
 [tools.regsync."platforms.windows-x64"]
 checksum = "sha256:a5d41ce2bfcb384a5551b88927a3aebd78b90abb8d07ae2f4a0e22c44a61cbef"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.5/regsync-windows-amd64.exe"
+url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/430177229"
 
 [[tools.restic]]
 version = "0.19.1"
@@ -296,27 +324,34 @@ backend = "aqua:jdx/usage"
 [tools.usage."platforms.linux-arm64"]
 checksum = "sha256:c5ee535f65cadca0a0883ce0073095e1a12fc749224a79a13d57e38cbcc88dd4"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875604"
 
 [tools.usage."platforms.linux-arm64-musl"]
 checksum = "sha256:c5ee535f65cadca0a0883ce0073095e1a12fc749224a79a13d57e38cbcc88dd4"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875604"
 
 [tools.usage."platforms.linux-x64"]
 checksum = "sha256:678114d182273bc8a1316f3528f1f8ded047ed56b41b822656de7046e16a6deb"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875471"
 
 [tools.usage."platforms.linux-x64-musl"]
 checksum = "sha256:678114d182273bc8a1316f3528f1f8ded047ed56b41b822656de7046e16a6deb"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875471"
 
 [tools.usage."platforms.macos-arm64"]
 checksum = "sha256:dc6628015c420f0e0384c95999266ca74dc19de8279b4d54667844286cf8fa13"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875616"
 
 [tools.usage."platforms.macos-x64"]
 checksum = "sha256:dc6628015c420f0e0384c95999266ca74dc19de8279b4d54667844286cf8fa13"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875616"
 
 [tools.usage."platforms.windows-x64"]
 checksum = "sha256:3cd7995171854518873f84bf60be17c8e331cad1ca180e03911fac414a7a6372"
 url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455876520"
