@@ -40,79 +40,79 @@ url = "https://github.com/marcusbuffett/pipe-rename/releases/download/1.6.7/rena
 url_api = "https://api.github.com/repos/marcusbuffett/pipe-rename/releases/assets/359580367"
 
 [[tools.rclone]]
-version = "1.74.3"
+version = "1.74.4"
 backend = "aqua:rclone/rclone"
 
 [tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439459056"
+checksum = "sha256:97685285c9ad6a0cf17d5844115d2a67245af6444db672187074bd9c358de419"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470550100"
 
 [tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:8f8d47446e061f80c3256659fe8e21f56d72d96aaefe1275d088ea5eb6b42aa7"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439459056"
+checksum = "sha256:97685285c9ad6a0cf17d5844115d2a67245af6444db672187074bd9c358de419"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470550100"
 
 [tools.rclone."platforms.linux-x64"]
-checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439458559"
+checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
 
 [tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:dbee7ccd7a5d617e4ed4cd4555c16669b511abfe8d31164f61be35ac9e999bd2"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439458559"
+checksum = "sha256:fe435e0c36228e7c2f116a8701f01127bb1f694005fc11d1f27186c8bca4115d"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-linux-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470549540"
 
 [tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:33a435ab17023b686918ce9a3975aceb75fe1796c694f38f1993024be1f063f5"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439462898"
+checksum = "sha256:c2100e2d4a4b3be04c55cd45380cafe7647e1ad772bb055f52f00876ed701167"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-osx-arm64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470554897"
 
 [tools.rclone."platforms.macos-x64"]
-checksum = "sha256:417cabd402d57806d597bd0ba8fb33a434ca8c2a1a5aa98de5a0bd4b52b39202"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439462719"
+checksum = "sha256:4188aa84043d7a6240912923f47639a9d2da21f3b40a521c065c8d92e66563f6"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-osx-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470554605"
 
 [tools.rclone."platforms.windows-x64"]
-checksum = "sha256:ecb0ed9006e0d1a693757007716a11dab6c2cde6dac3f2fd87da962eaa73d11d"
-url = "https://github.com/rclone/rclone/releases/download/v1.74.3/rclone-v1.74.3-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/439463949"
+checksum = "sha256:ef097ef9de37a57feb7d9f9c7afb34148ad3c65be8025f1d8f7f521554a701ea"
+url = "https://github.com/rclone/rclone/releases/download/v1.74.4/rclone-v1.74.4-windows-amd64.zip"
+url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/470555822"
 
 [[tools.usage]]
-version = "3.5.3"
+version = "3.5.4"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.linux-arm64"]
-checksum = "sha256:c5ee535f65cadca0a0883ce0073095e1a12fc749224a79a13d57e38cbcc88dd4"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875604"
+checksum = "sha256:6f826638194da61fc5f631a9ed25930ddc3746e8f9de97f218b36a3a899c196c"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468428362"
 
 [tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:c5ee535f65cadca0a0883ce0073095e1a12fc749224a79a13d57e38cbcc88dd4"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875604"
+checksum = "sha256:6f826638194da61fc5f631a9ed25930ddc3746e8f9de97f218b36a3a899c196c"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468428362"
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:678114d182273bc8a1316f3528f1f8ded047ed56b41b822656de7046e16a6deb"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875471"
+checksum = "sha256:642e6eb31e58db1f3cda206d0484685950a224825f5ed22eb9cc9a6d6ddbbb46"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468428453"
 
 [tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:678114d182273bc8a1316f3528f1f8ded047ed56b41b822656de7046e16a6deb"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875471"
+checksum = "sha256:642e6eb31e58db1f3cda206d0484685950a224825f5ed22eb9cc9a6d6ddbbb46"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468428453"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:dc6628015c420f0e0384c95999266ca74dc19de8279b4d54667844286cf8fa13"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875616"
+checksum = "sha256:25b0fff15f030f3c08caa960174b3fb9f85be601824744424a7409dcdf1ee37a"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468433769"
 
 [tools.usage."platforms.macos-x64"]
-checksum = "sha256:dc6628015c420f0e0384c95999266ca74dc19de8279b4d54667844286cf8fa13"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455875616"
+checksum = "sha256:25b0fff15f030f3c08caa960174b3fb9f85be601824744424a7409dcdf1ee37a"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468433769"
 
 [tools.usage."platforms.windows-x64"]
-checksum = "sha256:3cd7995171854518873f84bf60be17c8e331cad1ca180e03911fac414a7a6372"
-url = "https://github.com/jdx/usage/releases/download/v3.5.3/usage-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/455876520"
+checksum = "sha256:61dbc0aedc54696c6201d1e8f107348b30706a47e23a44c08280c3c7f63b6804"
+url = "https://github.com/jdx/usage/releases/download/v3.5.4/usage-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/468428934"
