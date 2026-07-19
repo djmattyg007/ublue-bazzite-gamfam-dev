@@ -37,6 +37,7 @@ dnf5 -y install \
   htop \
   jq \
   libheif \
+  libvirt \
   lsd \
   mame-tools \
   micro \
@@ -48,6 +49,7 @@ dnf5 -y install \
   podlet \
   prismlauncher \
   qchdman \
+  qemu-kvm \
   qv4l2 \
   ripgrep \
   rust \
