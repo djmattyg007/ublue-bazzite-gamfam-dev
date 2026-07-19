@@ -61,6 +61,10 @@ This should queue your image for the next reboot, which you can do immediately a
 
 Congratulations! You have officially set up your custom image!
 
+## Virtualisation
+
+Additional work is required on top of installing the virtualisation packages included in this image. Don't forget to run `ujust enable-virtualization` though.
+
 ## Additional resources
 
 If you have questions about this template after following the instructions, try the following spaces:
