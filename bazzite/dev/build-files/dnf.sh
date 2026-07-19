@@ -27,6 +27,7 @@ dnf5 -y install \
   cascadia-code-nf-fonts \
   cascadia-mono-nf-fonts \
   dfc \
+  dos2unix \
   fd-find \
   gh \
   git-delta \
