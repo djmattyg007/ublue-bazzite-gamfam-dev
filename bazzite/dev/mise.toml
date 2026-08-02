@@ -2,6 +2,7 @@
 mq = "github:harehare/mq"
 
 [tools]
+choose = "1.3.7"
 powershell = "7.6.5"
 rclone = "1.75.0"
 regctl = "0.11.5"
