@@ -7,7 +7,7 @@ rclone = "1.75.0"
 regctl = "0.11.5"
 regsync = "0.11.5"
 restic = "0.19.1"
-usage = "4.1.0"
+usage = "5.0.0"
 
 [tools."github:marcusbuffett/pipe-rename"]
 version = "1.6.7"
