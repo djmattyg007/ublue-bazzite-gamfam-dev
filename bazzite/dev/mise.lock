@@ -10,9 +10,9 @@ url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-aa
 url_api = "https://api.github.com/repos/theryangeary/choose/releases/assets/286227042"
 
 [tools.choose."platforms.linux-x64"]
-checksum = "sha256:f9958b15b9c5e2ed21162dcd21e514b51a03efc8dcbf730546c3dbef8a2eba2a"
-url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-x86_64-unknown-linux-musl"
-url_api = "https://api.github.com/repos/theryangeary/choose/releases/assets/286227039"
+checksum = "sha256:9f7e5f6f02e53dc3869cf216db5d481d48f365bdbbebe2f08969734c8443784e"
+url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-x86_64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/theryangeary/choose/releases/assets/286227035"
 
 [tools.choose."platforms.linux-x64-musl"]
 checksum = "sha256:f9958b15b9c5e2ed21162dcd21e514b51a03efc8dcbf730546c3dbef8a2eba2a"
