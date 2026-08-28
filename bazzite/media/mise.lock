@@ -79,40 +79,40 @@ url = "https://github.com/rclone/rclone/releases/download/v1.75.0/rclone-v1.75.0
 url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/496941642"
 
 [[tools.usage]]
-version = "6.1.1"
+version = "6.5.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.linux-arm64"]
-checksum = "sha256:4f5c2f08acbbb6e1e675bbd98c58c4b698e88829d1d150e3f3fc688fa1e3db4f"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526185438"
+checksum = "sha256:2c02d457cf6f6e03177a8cb5b246f466485a0a4b40a778ed6399a0620d2830f3"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533941168"
 
 [tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:9e2b57c5e423eb8eb38682567ef2d7722f83c13e9d398f50c1c4fb30888cb292"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526184171"
+checksum = "sha256:8c78dfa87c0426214642448e6caca0892992d42d92dc722d116dab7d9129d295"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533940980"
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:cb367c1b753819a9fa5de704d1dd0887609b99334e76124c6a5ac179a9f56319"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526183094"
+checksum = "sha256:0dc1cc55e4f3766f9a61d50c7854541983094faf2bacf769d1f4f9f45b0c1a8a"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533940901"
 
 [tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:1e8cde78b39d675b6bd4104c8c349ce2e5f00eb1bb164c3ff86756db62a6979f"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526184443"
+checksum = "sha256:bc5bfe1078c4ce9339ba126670d5ced3eb25d63acbd4b1bbe7b51b04f243cd0c"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533940976"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:0ec220c5083182667c9ba2c456b8e1297132b4d12ade966889ba3fd4e96d5aef"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526174096"
+checksum = "sha256:54e692f240d11a2e8a34fb3e0273821e35272f5b502226bd958736c16f7e7e3d"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533960041"
 
 [tools.usage."platforms.macos-x64"]
-checksum = "sha256:0ec220c5083182667c9ba2c456b8e1297132b4d12ade966889ba3fd4e96d5aef"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526174096"
+checksum = "sha256:54e692f240d11a2e8a34fb3e0273821e35272f5b502226bd958736c16f7e7e3d"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533960041"
 
 [tools.usage."platforms.windows-x64"]
-checksum = "sha256:61efe94b592007219f7925be05df93c6eaf0e147d93b2db32e5283dd2158f0c9"
-url = "https://github.com/jdx/usage/releases/download/v6.1.1/usage-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/526177722"
+checksum = "sha256:041603b3f09e66870f5cb2475e4cb8a7cb10e222281bda13fe301c7a3b26a39b"
+url = "https://github.com/jdx/usage/releases/download/v6.5.0/usage-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/533944295"
