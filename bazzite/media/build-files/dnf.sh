@@ -25,6 +25,7 @@ dnf5 -y install \
   cascadia-mono-nf-fonts \
   dfc \
   emulationstation-de \
+  exiv2 \
   fd-find \
   jq \
   libheif \
