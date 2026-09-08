@@ -47,6 +47,7 @@ dnf5 -y install \
   mise \
   moreutils \
   nerd-fonts \
+  nethogs \
   pandoc \
   podlet \
   prismlauncher \

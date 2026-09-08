@@ -34,6 +34,7 @@ dnf5 -y install \
   micro \
   mise \
   nerd-fonts \
+  nethogs \
   pandoc \
   podlet \
   prismlauncher \
