@@ -1,6 +1,6 @@
 [tools]
 rclone = "1.75.1"
-usage = "6.8.0"
+usage = "6.9.0"
 
 [tools."github:marcusbuffett/pipe-rename"]
 version = "1.6.7"
