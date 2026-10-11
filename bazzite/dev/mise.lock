@@ -9,6 +9,11 @@ checksum = "sha256:0db1d789ededcedd2c56222eb28f45d5e5e1c56717c0ba5d26c780696bbe3
 url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-aarch64-unknown-linux-gnu"
 url_api = "https://api.github.com/repos/theryangeary/choose/releases/assets/286227042"
 
+[tools.choose."platforms.linux-arm64-musl"]
+checksum = "sha256:0db1d789ededcedd2c56222eb28f45d5e5e1c56717c0ba5d26c780696bbe3420"
+url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-aarch64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/theryangeary/choose/releases/assets/286227042"
+
 [tools.choose."platforms.linux-x64"]
 checksum = "sha256:9f7e5f6f02e53dc3869cf216db5d481d48f365bdbbebe2f08969734c8443784e"
 url = "https://github.com/theryangeary/choose/releases/download/v1.3.7/choose-x86_64-unknown-linux-gnu"
@@ -171,9 +176,9 @@ url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/powersh
 url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/551205454"
 
 [tools.powershell."platforms.linux-x64-musl"]
-checksum = "sha256:9537c256a60c34f6bc2dd60c1c10b31a0c2ef26e96799d066be78325ab4947cc"
-url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/powershell-7.6.6-linux-musl-x64.tar.gz"
-url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/551205127"
+checksum = "sha256:ddbc4a2d113bbd46d283cfedcbcd117a70caefd7673f41f2b4e0000badf103bc"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/powershell-7.6.6-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/551205454"
 
 [tools.powershell."platforms.macos-arm64"]
 checksum = "sha256:6df833d094ebac1c1a74340d7b3437f4aaf5e03ce640484a1c4359f3ce8b3db1"
@@ -237,36 +242,43 @@ backend = "aqua:regclient/regclient/regctl"
 checksum = "sha256:a9b71a3ee79b2d1dbbd7d51fd5e8fa214722c192864235d3d8764463c751a1ff"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-linux-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343835"
+provenance = "cosign"
 
 [tools.regctl."platforms.linux-arm64-musl"]
 checksum = "sha256:a9b71a3ee79b2d1dbbd7d51fd5e8fa214722c192864235d3d8764463c751a1ff"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-linux-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343835"
+provenance = "cosign"
 
 [tools.regctl."platforms.linux-x64"]
 checksum = "sha256:8e0e62a497fcdb8048d18aa927a139613176ba0531f412bc541044e28f9856bd"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-linux-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343840"
+provenance = "cosign"
 
 [tools.regctl."platforms.linux-x64-musl"]
 checksum = "sha256:8e0e62a497fcdb8048d18aa927a139613176ba0531f412bc541044e28f9856bd"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-linux-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343840"
+provenance = "cosign"
 
 [tools.regctl."platforms.macos-arm64"]
 checksum = "sha256:5b52b71861abc300ab513e87a4c3794cff6508035ac7f6b6bdfa1fa5688c0040"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-darwin-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343870"
+provenance = "cosign"
 
 [tools.regctl."platforms.macos-x64"]
 checksum = "sha256:d651381c58357e9b9446cec172761c7418b7621da57960d438175d8f4c5b479d"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-darwin-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343858"
+provenance = "cosign"
 
 [tools.regctl."platforms.windows-x64"]
 checksum = "sha256:02778e22c482d437e14fc06ee1e8504aa8f0f0d2ac266a89ab80c8a5503c8024"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regctl-windows-amd64.exe"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343819"
+provenance = "cosign"
 
 [[tools.regsync]]
 version = "0.11.6"
@@ -276,36 +288,43 @@ backend = "aqua:regclient/regclient/regsync"
 checksum = "sha256:e7bb654063e9760f0a8ce67d7369a101ef261c40303a2e751b709598d549643f"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-linux-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343771"
+provenance = "cosign"
 
 [tools.regsync."platforms.linux-arm64-musl"]
 checksum = "sha256:e7bb654063e9760f0a8ce67d7369a101ef261c40303a2e751b709598d549643f"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-linux-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343771"
+provenance = "cosign"
 
 [tools.regsync."platforms.linux-x64"]
 checksum = "sha256:138aed7deddea6e4d34bdc98d0111bd03927a430caa47b47b22081cd57e4fced"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-linux-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343806"
+provenance = "cosign"
 
 [tools.regsync."platforms.linux-x64-musl"]
 checksum = "sha256:138aed7deddea6e4d34bdc98d0111bd03927a430caa47b47b22081cd57e4fced"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-linux-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343806"
+provenance = "cosign"
 
 [tools.regsync."platforms.macos-arm64"]
 checksum = "sha256:6396db873ac9643cfac40b42199863eecc85e8d67db5e8507166cc8cd8029e9c"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-darwin-arm64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343770"
+provenance = "cosign"
 
 [tools.regsync."platforms.macos-x64"]
 checksum = "sha256:9540a03d16c3baed54b2439a60232f30cf12ef12e19ac2c992f74781dc510a21"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-darwin-amd64"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343834"
+provenance = "cosign"
 
 [tools.regsync."platforms.windows-x64"]
 checksum = "sha256:b13e77eb8ad3a68b405b3e987a2802fcdce00afee41bc415b1c1f626298f9953"
 url = "https://github.com/regclient/regclient/releases/download/v0.11.6/regsync-windows-amd64.exe"
 url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/541343763"
+provenance = "cosign"
 
 [[tools.restic]]
 version = "0.19.1"
