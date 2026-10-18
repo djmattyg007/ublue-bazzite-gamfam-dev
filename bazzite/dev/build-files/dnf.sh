@@ -38,6 +38,7 @@ dnf5 -y install \
   hadolint \
   htop \
   jq \
+  kde-partitionmanager \
   libheif \
   libvirt \
   lsd \
