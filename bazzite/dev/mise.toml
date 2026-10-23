@@ -3,13 +3,13 @@ mq = "github:harehare/mq"
 
 [tools]
 choose = "1.3.7"
-doggo = "1.4.1"
-powershell = "7.6.7"
+doggo = "1.4.2"
+powershell = "7.6.8"
 rclone = "1.75.2"
-regctl = "0.11.6"
-regsync = "0.11.6"
+regctl = "0.11.7"
+regsync = "0.11.7"
 restic = "0.19.1"
-usage = "7.0.2"
+usage = "7.1.1"
 
 [tools."github:marcusbuffett/pipe-rename"]
 version = "1.6.7"
