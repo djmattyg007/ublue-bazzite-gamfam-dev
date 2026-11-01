@@ -8,3 +8,5 @@ bin = "renamer"
 
 [settings]
 lockfile = true
+lockfile_platforms = ["linux-x64"]
+os = "linux"

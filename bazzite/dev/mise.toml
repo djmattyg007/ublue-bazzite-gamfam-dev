@@ -22,3 +22,5 @@ rename_exe = "mq"
 
 [settings]
 lockfile = true
+lockfile_platforms = ["linux-x64"]
+os = "linux"
