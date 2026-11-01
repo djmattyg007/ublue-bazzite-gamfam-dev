@@ -48,6 +48,7 @@ dnf5 -y install \
   mise \
   moreutils \
   nerd-fonts \
+  netcat \
   nethogs \
   pandoc \
   podlet \
