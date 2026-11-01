@@ -18,6 +18,7 @@ set -exuo pipefail
 dnf5 config-manager setopt terra.enabled=1
 
 dnf5 -y copr enable lizardbyte/beta
+dnf5 -y copr enable rcannood/steamvr-room-setup-on-fedora
 
 dnf5 -y install \
   atool \
@@ -65,6 +66,7 @@ dnf5 -y install \
   sl \
   sqlite \
   starship \
+  steamvr-room-setup-on-fedora \
   Sunshine \
   tealdeer \
   tmux \
