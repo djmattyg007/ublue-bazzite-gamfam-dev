@@ -27,6 +27,7 @@ dnf5 -y install \
   cargo \
   cascadia-code-nf-fonts \
   cascadia-mono-nf-fonts \
+  copyparty \
   dfc \
   dos2unix \
   exiv2 \
