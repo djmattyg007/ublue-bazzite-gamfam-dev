@@ -55,6 +55,8 @@ dnf5 -y install \
   pandoc \
   podlet \
   prismlauncher \
+  python3-paramiko \
+  python3-pyftpdlib \
   qchdman \
   qemu-kvm \
   qv4l2 \
