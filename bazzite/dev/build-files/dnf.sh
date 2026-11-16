@@ -57,7 +57,6 @@ dnf5 -y install \
   prismlauncher \
   python3-paramiko \
   python3-pyftpdlib \
-  qchdman \
   qemu-kvm \
   qv4l2 \
   ripgrep \
@@ -65,13 +64,11 @@ dnf5 -y install \
   rustup \
   sad \
   shellcheck \
-  shfmt \
   sl \
   sqlite \
   starship \
   steamvr-room-setup-on-fedora \
   Sunshine \
-  tealdeer \
   tmux \
   ugrep \
   uxplay \

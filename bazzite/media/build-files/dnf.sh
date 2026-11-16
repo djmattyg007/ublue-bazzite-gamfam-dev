@@ -38,7 +38,6 @@ dnf5 -y install \
   pandoc \
   podlet \
   prismlauncher \
-  qchdman \
   qv4l2 \
   ripgrep \
   sl \
