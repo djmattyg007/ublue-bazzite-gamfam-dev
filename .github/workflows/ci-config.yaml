@@ -24,12 +24,12 @@ jobs:
           persist-credentials: false
 
       - name: "Run actionlint"
-        uses: "reviewdog/action-actionlint@7abf25e1607ec65838b73d0484ff31f8e9499d80" # v1.81.2
+        uses: "reviewdog/action-actionlint@ae857e78c1b42b3d0a49637181b09d3d56d402b4" # v1.84.1
         with:
           fail_level: "warning"
 
       - name: "Run zizmor"
-        uses: "zizmorcore/zizmor-action@45d7276c9ca790aabd705e31ca99c6185c3e76dd" # v0.8.1
+        uses: "zizmorcore/zizmor-action@bd12b495c90993a4301c73398142281a61499af3" # v0.9.0
         with:
           advanced-security: false
           annotations: true
@@ -45,7 +45,7 @@ jobs:
           args: "renovate-config-validator --strict"
 
       - name: "Run shellcheck"
-        uses: "reviewdog/action-shellcheck@d0b8d5fd7fad6afdb6e1b6ce1778892be4d1f427" # v1.34.1
+        uses: "reviewdog/action-shellcheck@950c9d71535c8c49e5c029c33a438ade63b9009c" # v1.35.1
         with:
           fail_level: "info"
           shellcheck_flags: ""
