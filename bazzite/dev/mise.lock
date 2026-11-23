@@ -47,14 +47,15 @@ url_api = "https://api.github.com/repos/harehare/mq/releases/assets/692383401"
 provenance = "github-attestations"
 
 [[tools.powershell]]
-version = "7.6.9"
+version = "7.7.0"
 backend = "aqua:PowerShell/PowerShell"
-specifiers = ["7.6.9"]
+specifiers = ["7.7.0"]
 
 [tools.powershell."platforms.linux-x64"]
-checksum = "sha256:1da6d6d6035d651f20e70ddee7c4c15ac6ab8b9fb40ee92240d91263f28a884b"
-url = "https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/powershell-7.6.9-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/675638183"
+checksum = "sha256:c89d9c682d2c403dfe726f3df948e359675235a5bd6fab535776de69729ca0cb"
+checksum_source = "mise-versions"
+url = "https://github.com/PowerShell/PowerShell/releases/download/v7.7.0/powershell-7.7.0-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/PowerShell/PowerShell/releases/assets/732755786"
 
 [[tools.rclone]]
 version = "1.76.0"
@@ -90,14 +91,15 @@ url_api = "https://api.github.com/repos/regclient/regclient/releases/assets/6608
 provenance = "cosign"
 
 [[tools.restic]]
-version = "0.19.1"
+version = "0.20.0"
 backend = "aqua:restic/restic"
-specifiers = ["0.19.1"]
+specifiers = ["0.20.0"]
 
 [tools.restic."platforms.linux-x64"]
-checksum = "sha256:f415415624dcc452f2a02b8c33641791a8c6d6d3b65bbb3543fcf9a25151585c"
-url = "https://github.com/restic/restic/releases/download/v0.19.1/restic_0.19.1_linux_amd64.bz2"
-url_api = "https://api.github.com/repos/restic/restic/releases/assets/466999719"
+checksum = "sha256:0ccd9fa7885074a24603b051e01bf9bd8b5e45d6a1791e9d9887e9e9372107f7"
+checksum_source = "mise-versions"
+url = "https://github.com/restic/restic/releases/download/v0.20.0/restic_0.20.0_linux_amd64.bz2"
+url_api = "https://api.github.com/repos/restic/restic/releases/assets/767546139"
 
 [[tools.shfmt]]
 version = "3.14.1"
@@ -120,12 +122,12 @@ url = "https://github.com/tealdeer-rs/tealdeer/releases/download/v1.9.1/tealdeer
 url_api = "https://api.github.com/repos/tealdeer-rs/tealdeer/releases/assets/673323057"
 
 [[tools.usage]]
-version = "7.3.0"
+version = "7.4.1"
 backend = "packslip:github.com/jdx/usage"
-specifiers = ["7.3.0"]
+specifiers = ["7.4.1"]
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:78d9d765bb87c9377e95fd816ab436a5001d95d28b3b9bf7e405ed3eccfe025c"
-url = "https://github.com/jdx/usage/releases/download/v7.3.0/usage-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:4d21ce353b671d4aa4bbf4bb2719ae15c9a82d6d2268516d24f7eb5dd061533d"
+url = "https://github.com/jdx/usage/releases/download/v7.4.1/usage-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 repository_ids = { repository = "677629099" }
